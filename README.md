@@ -5,7 +5,7 @@
 
 ## **Descrição**
 
-Este projeto realiza uma **análise exploratória de dados (EDA)** do dataset `penguins` disponível na biblioteca **Seaborn** do Python. O objetivo é investigar diferenças morfológicas entre as espécies de pinguins (**Adelie, Gentoo, Chinstrap**) e explorar relações entre suas medidas corporais, incluindo:
+Este projeto realiza uma **análise exploratória de dados** do dataset `penguins` disponível na biblioteca **Seaborn** do Python. O objetivo é investigar diferenças morfológicas entre as espécies de pinguins (**Adelie, Gentoo, Chinstrap**) e explorar relações entre suas medidas corporais, incluindo:
 
 * Comprimento do bico (`comprimento_bico_mm`)
 * Profundidade do bico (`profundidade_bico_mm`)
@@ -102,5 +102,6 @@ O dataset evidencia padrões claros de **dimorfismo sexual** e **diferenças ent
 Medidas corporais como nadadeira, peso e comprimento do bico são fortemente correlacionadas, permitindo prever características de um pinguim a partir de outra.
 As análises exploratórias, visualizações interativas e regressões reforçam a compreensão do perfil biométrico das espécies estudadas, fornecendo insights consistentes para estudos comparativos de morfologia de pinguins.
 
+Link para visualização dos graficos interativos: https://colab.research.google.com/drive/1F6X5Hvnm3vA94Jj8nUJuYHzzgzidciUG?usp=sharing
 ---
 
