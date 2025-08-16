@@ -1,27 +1,24 @@
 
-#  Penguins Data Analysis 🐧
-
-## **Descrição**
-
-Este projeto realiza uma **análise exploratória de dados (EDA)** do dataset `penguins` disponível na biblioteca **Seaborn** do Python. O objetivo é estudar as diferenças entre espécies de pinguins (Adelie, Gentoo, Chinstrap), analisando medidas corporais como:
-
-* Comprimento do bico (`comprimento_bico_mm`)
-* Profundidade do bico (`profundidade_bico_mm`)
-* Tamanho da nadadeira (`nadadeira_mm`)
-* Peso (`peso_g`)
-
-Além disso, o projeto explora o **dimorfismo sexual** e as relações entre essas variáveis.
+# 🐧 Penguins Data Analysis
 
 ---
 
-## **Conteúdo do Projeto**
+## **Descrição**
 
-* **Análise Descritiva**: resumo estatístico, contagem por espécie e sexo
-* **Visualizações**:
+Este projeto realiza uma **análise exploratória de dados (EDA)** do dataset `penguins` disponível na biblioteca **Seaborn** do Python. O objetivo é investigar diferenças morfológicas entre as espécies de pinguins (**Adelie, Gentoo, Chinstrap**) e explorar relações entre suas medidas corporais, incluindo:
 
-Tradução das Colunas
+* Comprimento do bico (`comprimento_bico_mm`)
+* Profundidade do bico (`profundidade_bico_mm`)
+* Comprimento da nadadeira (`nadadeira_mm`)
+* Peso (`peso_g`)
 
-Para facilitar a leitura e compreensão do dataset, os nomes das colunas foram alterados para o idioma português. Abaixo estão as modificações realizadas:
+Além disso, o projeto aborda o **dimorfismo sexual** e as interações entre variáveis morfológicas.
+
+---
+
+## **Tradução das Colunas**
+
+Para tornar o dataset mais legível, os nomes das colunas foram **traduzidos para português**, mantendo a consistência e clareza nos gráficos e análises:
 
 | Coluna original     | Coluna em português    | Descrição                                      |
 | ------------------- | ---------------------- | ---------------------------------------------- |
@@ -33,33 +30,38 @@ Para facilitar a leitura e compreensão do dataset, os nomes das colunas foram a
 | `body_mass_g`       | `peso_g`               | Peso do pinguim em gramas                      |
 | `sex`               | `sexo`                 | Sexo biológico do pinguim (Masculino/Feminino) |
 
+**Objetivos desta modificação:**
 
-**Objetivo:**
+* Facilitar interpretação de gráficos e análises em português.
+* Permitir documentação mais clara e didática no notebook.
 
-Tornar os gráficos, análises e interpretações mais legíveis e intuitivos para falantes de português.
+---
 
-Facilitar a explicação e a documentação das análises no notebook.
+## **Conteúdo do Projeto**
+
+* **Análise Descritiva:** resumo estatístico, contagem por espécie e sexo.
+* **Visualizações:**
 
   * Histogramas e boxplots
   * Gráficos de dispersão 2D e 3D interativos (Plotly)
   * Pairplots e FacetGrids para explorar relações entre variáveis
-* **Regressão Linear**: análise da relação entre tamanho da nadadeira e peso
-* **Interatividade**: gráficos 3D interativos para explorar padrões de espécies e sexo
+* **Regressão Linear:** avaliação da relação entre tamanho da nadadeira e peso.
+* **Análises Interativas:** exploração de padrões entre espécies e sexo em gráficos 3D.
 
 ---
 
 ## **Principais Resultados**
 
-* Machos apresentam **peso e tamanho de nadadeira maiores que fêmeas** (dimorfismo sexual).
-* A espécie **Gentoo** possui nadadeiras maiores e peso acima da média em relação a Adelie e Chinstrap.
-* A nadadeira é um **bom preditor do peso**, explicando aproximadamente 76% da variação.
-* As visualizações 3D permitem identificar padrões complexos entre **peso, nadadeira e comprimento do bico**, diferenciando espécies e sexo.
+* Machos apresentam **peso e tamanho de nadadeira superiores às fêmeas**, evidenciando **dimorfismo sexual**.
+* A espécie **Gentoo** se destaca com **nadadeiras maiores e peso acima da média**, em comparação com Adelie e Chinstrap.
+* O tamanho da nadadeira é um **preditor significativo do peso** (R² ≈ 0.76).
+* Gráficos 3D interativos permitem identificar padrões complexos entre **peso, nadadeira e comprimento do bico**, diferenciando espécies e sexo.
 
 ---
 
 ## **Tecnologias e Bibliotecas**
 
-* Python 3.x
+* Python 3.12.6
 * Pandas
 * Seaborn
 * Plotly
@@ -72,26 +74,33 @@ Facilitar a explicação e a documentação das análises no notebook.
 
 1. Clone o repositório:
 
-   ```bash
-   git clone https://github.com/larissa-fv/Penguins_Data.git
-   ```
+```bash
+git clone https://github.com/larissa-fv/Penguins_Data.git
+```
+
 2. Instale as dependências:
 
-   ```bash
-   pip install pandas seaborn plotly statsmodels matplotlib
-   ```
-3. Execute o notebook `Penguins_Data.ipynb` no **Jupyter Notebook** ou **JupyterLab**.
+```bash
+pip install pandas seaborn plotly statsmodels matplotlib
+```
+
+3. Abra e execute o notebook `Penguins_Data.ipynb` no **Jupyter Notebook** ou **JupyterLab**.
 
 ---
 
 ## **Observações**
 
-* Dados do **dataset `penguins`** são carregados diretamente da biblioteca Seaborn.
-* O projeto inclui limpeza de dados e remoção de valores nulos para garantir a qualidade das análises.
-* Todos os gráficos possuem legendas, cores e interatividade para facilitar a interpretação.
+* O dataset `penguins` é carregado diretamente da biblioteca Seaborn.
+* Foi realizada **limpeza de dados** e remoção de valores nulos para garantir a qualidade da análise.
+* Todos os gráficos possuem **legendas, cores e interatividade** para facilitar interpretação.
 
-  ## Conclusão:
+---
 
-  O dataset Penguins evidencia padrões claros de dimorfismo sexual e diferenças entre espécies.
+## **Conclusão**
+
+O dataset evidencia padrões claros de **dimorfismo sexual** e **diferenças entre espécies**.
 Medidas corporais como nadadeira, peso e comprimento do bico são fortemente correlacionadas, permitindo prever características de um pinguim a partir de outra.
-As análises interativas e regressões reforçam a compreensão de como essas variáveis se relacionam, oferecendo uma visão completa do perfil biométrico das espécies estudadas.
+As análises exploratórias, visualizações interativas e regressões reforçam a compreensão do perfil biométrico das espécies estudadas, fornecendo insights consistentes para estudos comparativos de morfologia de pinguins.
+
+---
+
