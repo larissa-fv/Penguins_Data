@@ -44,7 +44,7 @@ Para tornar o dataset mais legível, os nomes das colunas foram **traduzidos par
 
   * Histogramas e boxplots
   * Gráficos de dispersão 2D e 3D interativos (Plotly)
-  * Pairplots e FacetGrids para explorar relações entre variáveis
+  * Pairplots e FacetGrids para explorar relações entre variáveis [ainda será implementado]
 * **Regressão Linear:** avaliação da relação entre tamanho da nadadeira e peso.
 * **Análises Interativas:** exploração de padrões entre espécies e sexo em gráficos 3D.
 
